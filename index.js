@@ -13,6 +13,7 @@ let port = process.env.PORT || 3000;
 app.use(express.json());
 app.use("/user", userRouter);
 app.use("/note", noteRouter);
+app.use("", (req, res) => res.json({ message: "hello" }));
 // app.use("/src/uploads", express.static(path.resolve("src/uploads/")))
 app.use(globalResponse);
 
