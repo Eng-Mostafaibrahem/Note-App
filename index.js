@@ -6,11 +6,10 @@ import { globalResponse } from "./src/Middlewares/error-handde.middleware.js";
 import { config } from "dotenv";
 import path from "path";
 
-
 config();
 
 const app = express();
-let port = process.env.PORT;
+let port = process.env.PORT || 3000;
 app.use(express.json());
 app.use("/user", userRouter);
 app.use("/note", noteRouter);
