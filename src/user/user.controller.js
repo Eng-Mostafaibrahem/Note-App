@@ -31,7 +31,7 @@ export const signUp = async (req, res, next) => {
   const user = await UserModel.create(userObject);
 
   //response
-  return res.status(200).json({ message: "Signin  Successfully" });
+  return res.status(200).json({ message: "SignUp Successfully" });
 };
 
 export const signIn = async (req, res, next) => {
