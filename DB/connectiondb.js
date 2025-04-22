@@ -11,7 +11,7 @@ export const connection_db = async () => {
   if (cached.conn) return cached.conn;
 
   if (!cached.promise) {
-    cached.promise = mongoose.connect(process.env.CONNECTION_DB_URI, {
+    cached.promise = mongoose.connect(process.env.CONNECCTION_DB_URI, {
       dbName: "NoteApp",
       useNewUrlParser: true,
       useUnifiedTopology: true,
