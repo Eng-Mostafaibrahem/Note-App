@@ -1,12 +1,5 @@
 {
   "version": 2,
-  "regions": [
-    "iad1"
-  ], 
-  "env": {
-    "NODE_ENV": "production"
-  },
-
   "builds": [
     {
       "src": "index.js",
@@ -19,4 +12,5 @@
       "dest": "/index.js"
     }
   ]
+  
 }
