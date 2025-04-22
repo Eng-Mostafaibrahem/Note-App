@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 export const connection_db = () => {
   mongoose
-    .connect(process.env.DATABASE_URL)
+    .connect(process.env.MONGODB_URI)
     .then((conn) => {
       console.log(`database connected : ${conn.connection.host}`);
     })
