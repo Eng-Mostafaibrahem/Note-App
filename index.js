@@ -10,7 +10,7 @@ import NoteModel from "./DB/models/note.model.js";
 config();
 
 const app = express();
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 5000;
 app.use(express.json());
 app.use("/user", userRouter);
 app.use("/note", noteRouter);
