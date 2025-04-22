@@ -14,7 +14,7 @@ let port = process.env.PORT || 5000;
 app.use(express.json());
 app.use("/user", userRouter);
 app.use("/note", noteRouter);
-app.use("", (req, res) => res.json({ message: "hello" }));
+app.use("", (req, res) => res.json({ message: "TEST DEPLOY" }));
 app.get("/test-db", async (req, res) => {
   try {
     const notes = await NoteModel.find();
